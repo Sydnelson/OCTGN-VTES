@@ -1,0 +1,135 @@
+This is the Vampire: the Eternal Struggle Game Definition for OCTGN.  You can always find the latest information on running V:TES with OCTGN at http://octgn.gamersjudgement.com/vtes.
+
+This game definition was created by Fernando Cesar aka Sydnelson with support of Nathaniel Kernes, Liam Whalen and Luigi Piccinni.
+
+
+------UNIVERSAL OCTGN SHORTCUTS------
+(these work in ALL OCTGN games, not just VTES)
+
+Zoom the Table
+ -- Use the scroll wheel on a mouse.
+
+Full Screen
+ -- To turn on /off full screen press F11.
+
+Move the Table
+ -- Hold the spacebar click-drag the Table.
+
+Increment/Decrement counters on a card
+ -- Use the +/- keys on your keyboard.
+
+Move counters from one card to another
+ -- Click-drag the counter to the other card.
+
+Target a card
+ -- Hold SHIFT and click on the card.
+
+Draw an Arrow between two cards
+ -- Hold SHIFT and click-drag from one card to the other.
+
+Select multiple cards
+ -- Either click-drag a selection box over the region of cards, or hold CTRL and click a card.
+
+Bring card to front ot send it to back
+ -- Use Page Up or Page Down on a selected card to bring it to front or send it to back of another card in table.
+
+
+------VTES-SPECIFIC KEYBOARD SHORTCUTS------
+
+
+------Global Shortcuts------
+(can be used with mouse pointer in any place)
+
+Phase Shortcuts
+-Untap = Alt+1
+-Master = Alt+2
+-Minion = Alt+3
+-Influence = Alt+4
+-Discard = Alt+5
+-Display Current = Alt+0
+-Next = Tab
+
+*More Shortcuts
+-Create Marker... = Ctrl+Shift+M
+-Roll 20-Sided Die = Ctrl+Shift+R
+-Flip a Coin = Ctrl+Shift+F
+-Reaction = F10
+-No Reactions = Shift+F11
+-No Block Attempting = F12
+-Clear All Targets And Highlights = Esc
+-Shuffle Library="Ctrl+S
+-Shuffle Crypt = Ctrl+Shift+S
+
+
+------Hand Shortcuts------
+
+-Play From Hand = Alt+P
+-Discard = Del
+-Draw Cards = Ctrl+D
+-Draw many... = Ctrl+Shift+D
+-Reveal \ Hide Top Library Card = Ctrl+Alt+L
+-Draw Crypt Card = Ctrl+C
+-Reveal \ Hide Top Crypt Card = Ctrl+Alt+C
+
+
+------Card Shortcuts------
+(need mouse over/select the target card)
+
+*Counters Shortcuts
+-Transfer Blood Counter From Pool = Ctrl+1
+-Transfer Blood Counter(s) From Pool = Ctrl+2
+-Transfer Life Counter From Pool = Ctrl+3
+-Transfer Life Counter(s) From Pool = Ctrl+4
+-Add Blood Counter = Ctrl+Q
+-Add X Blood Counter(s) = Ctrl+W
+-Add Life Counter = Ctrl+E
+-Add X Life Counter(s) = Ctrl+R
+-Add Generic Counter = Ctrl+5
+-Add Counters... = Ctrl+6
+-Remove Blood Counter = Ctrl+Shift+1
+-Remove x Blood Counters = Ctrl+Shift+2
+-Remove Life Counter = Ctrl+Shift+3
+-Remove X Life Counter(s) = Ctrl+Shift+4
+-Remove Generic Counter = Ctrl+Shift+5
+
+*Actions Shortcuts
+-Use Special Ability = Ctrl+Alt+E
+-Bleed = Alt+B
+-Hunt = Alt+H
+-Equip = Alt+E
+-Rescue From Torpor = Alt+T
+-Leave From Torpor = Alt+L
+-Call a Referendun = Alt+R
+-Recruit a Ally = Alt+A
+-Employ a Retainer = Ctrl+Alt+R
+-Become a Anarch = Ctrl+Alt+A
+
+*Combat Shortcuts
+-Start Combat = F1
+-No Manuever = F2
+-No Pre-Strike = F3
+-Hand Strike = F4
+-No Additional Strikes = F5
+-No Press = F6
+-End Combat = F7
+-Restart Combat = F8
+
+*More Shortcuts
+-Try to Block = F9
+-Turn Card = Ctrl+F
+-Burn Card = Del
+-Remove Card From Game = Ctrl+Del
+-Clear Card = Esc
+-Tap \ Untap = Space
+-Don't Untap \ Allow Untap = Ctrl+V
+
+
+------Tips------
+
+To move a card from hand to table face down just right click on it and select "Turn Card" (Ctrl+F) option and drag and drop that card to table holding shift.
+
+To see face down cards on table just right click on it and select "Peek" (Ctrl+P) option.
+
+To select more than one card just hold Ctrl and click on cards you want.
+
+To create a Edge, Anarch or Corruption counters just right click on table and select "Create a Marker..." (Ctrl+Shift+M) option.

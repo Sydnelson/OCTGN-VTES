@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="d8851051-1a96-4511-a6fc-5b4960002b15" sleeveid="0">
+  <section name="Library" shared="False">
+    <card qty="2" id="80a03012-780f-4526-9d16-fbccef417043">Anarch Revolt</card>
+    <card qty="1" id="b0955730-2ead-454b-9ad1-68deb89b7a4a">Anarch Troublemaker</card>
+    <card qty="3" id="74ccad25-326b-4f9e-ad0c-6cba96ecce0d">Minion Tap</card>
+    <card qty="2" id="86fc23d8-78b5-4255-afcf-f6e31e9fbdbc">Presence</card>
+    <card qty="1" id="68173548-d698-4c4c-95aa-26c075df9b2a">Secure Haven</card>
+    <card qty="2" id="fee03ea2-3c2c-4dac-806d-e0336739da4e">Sudden Reversal</card>
+    <card qty="1" id="6ff4d9e0-5d0c-4413-a1e2-20f3249e142f">Ventrue Headquarters</card>
+    <card qty="3" id="a8a175cc-f752-49ed-9717-30095818d16e">Enchant Kindred</card>
+    <card qty="1" id="c76c91ed-4b1e-4650-b8a0-ba585d180587">Fee Stake: Boston</card>
+    <card qty="1" id="67f5b2e9-77bd-4ca5-949d-8b541900235c">Fee Stake: New York</card>
+    <card qty="1" id="cb86e37a-9c06-4e02-85d1-61b3f69381d3">Fee Stake: Seattle</card>
+    <card qty="4" id="df803675-fcb4-42bd-a0db-d22b04dac151">Go Anarch</card>
+    <card qty="4" id="21ed76dd-c144-4690-b21f-85fa04e72449">Skullduggery</card>
+    <card qty="1" id="7bd051f9-0ad3-4afa-b3e7-ad4493ca97d9">Aire of Elation</card>
+    <card qty="1" id="de9c65a6-a796-465e-aa8b-f9588d2127d7">Alacrity</card>
+    <card qty="4" id="c7bce220-2501-4ed7-b9ca-3fd5ba3d83ff">Bewitching Oration</card>
+    <card qty="4" id="5b2417c6-b10b-4d02-82dc-2f330adebaeb">Bribes</card>
+    <card qty="2" id="50762ae0-56f1-4b46-b1eb-0342cc282463">Change of Target</card>
+    <card qty="3" id="6b0417d6-827d-43de-b2d8-55a8a4f69457">Rant!</card>
+    <card qty="1" id="0329bc4f-665a-43e1-bfb5-62291500ed58">Telepathic Vote Counting</card>
+    <card qty="3" id="048633a4-c585-49c7-b36c-268550b0d4bf">Voter Captivation</card>
+    <card qty="2" id="b6d39dca-0e35-4a79-bc0b-79b5aadc0ba1">Anarch Salon</card>
+    <card qty="3" id="5a77c0dc-e5ff-48a8-ac85-534ceac22586">Anarchist Uprising</card>
+    <card qty="2" id="6b7f4720-af29-4a7a-82f5-5f0d541abdb5">Conservative Agitation</card>
+    <card qty="1" id="6f26f19d-f6c2-4eea-abb7-a49f3f9bb050">Disputed Territory</card>
+    <card qty="1" id="3f2f0a0e-2499-459c-ba06-474a5104273e">Domain Challenge</card>
+    <card qty="1" id="f5e07b7d-cc11-47a7-ac03-070a0e5181bc">Dramatic Upheaval</card>
+    <card qty="2" id="c304c4b4-bcf6-468e-8a21-22bc59e1b9f3">Free States Rant</card>
+    <card qty="3" id="68022d3f-0ffd-41be-b9e4-2fb91aa2dfb2">Kine Resources Contested</card>
+    <card qty="1" id="6420d2f0-b0ea-48c4-a707-641b4b87d2bb">Peace Treaty</card>
+    <card qty="1" id="889c37c6-7087-497e-9b05-f81ae30d91e2">Dread Gaze</card>
+    <card qty="4" id="dcc4519f-5982-4ce4-b9a6-e23005fbab7e">Mole, The</card>
+    <card qty="3" id="f6fd928e-422f-4188-9a98-bc1d92e8edc1">Telepathic Counter</card>
+    <card qty="3" id="5d8808c3-5570-4024-9af3-abc03515f70c">Wake with Evening's Freshness</card>
+    <card qty="1" id="53b2dfb1-6173-4f3b-b9b5-9a499e0443ab">Dodge</card>
+    <card qty="1" id="883d7e36-3132-4a95-8af0-1b0c9743d64e">Fast Hands</card>
+    <card qty="2" id="1d85d631-b4c9-4e39-9b23-12a34229a912">Majesty</card>
+    <card qty="1" id="54becea5-dd9d-413b-b349-4c1e4d6711f8">Firebrand</card>
+  </section>
+  <section name="Crypt" shared="False">
+    <card qty="1" id="b5ca46a5-10b9-4d18-8c90-340be71c6b07">Ilyana Ravidovich</card>
+    <card qty="1" id="2577f6db-d727-46d7-a0d8-7810f45f3d1e">Catherine du Bois</card>
+    <card qty="1" id="97b97edc-ab0a-42bd-a655-3957198d925c">Kurt Densch</card>
+    <card qty="1" id="2b449676-0d6a-4747-93a9-4a835c02f79f">Sundown</card>
+    <card qty="1" id="0c659828-8a2f-4852-8e7e-3b87777dbb37">Steve Booth</card>
+    <card qty="2" id="f64b7dbb-4a88-475d-96c0-a60e7e8bcedf">Jeremy MacNeil</card>
+    <card qty="1" id="84a91cd6-92b2-4ac8-83f7-0dc7dfeb77cf">Jeremy MacNeil (ADV)</card>
+    <card qty="1" id="924a7b4a-a247-4648-a082-76b10f830ee2">Suzanne Kadim</card>
+    <card qty="1" id="cdfaf516-563f-4719-9ece-87d59474eb3c">Ira Rivers</card>
+    <card qty="1" id="7512cd05-0d41-4685-9e8a-f5ddf4a70d69">Michael Luther</card>
+    <card qty="1" id="8620551e-914b-4ed9-81da-c5bdf1006e60">Antonino</card>
+  </section>
+  <notes><![CDATA[]]></notes>
+</deck>

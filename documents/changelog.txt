@@ -1,0 +1,85 @@
+1.4.0.0 – 03/FEB/2019
+Added Anthology set
+Added Lost Kindred expansion
+Added a autosave option (experimental)
+Fixed some bugs and added new functionalities
+Updated all card images and major tokens
+Updated all database
+
+1.3.0.0 – 21/DEC/2016
+Added Anarchs Unbound expansion
+Updated EDGE and some icons images
+Updated game and sets urls
+
+1.2.0.8 – 14/APR/2015
+Fixed missing Jyhad and VtES expansion cards
+
+1.2.0.7 – 21/MAR/2015
+Added Storyline Rewards 2015 promo cards
+Added cards from storyline The Red Sign
+
+1.2.0.6 – 13/JAN/2015
+Correct image file GUIDS (this will correct all wrong image files)
+Correct KoT precon decks
+
+1.2.0.5 - 04/DEC/2014
+Added few menu entries
+Correct some texts and data
+Added all expansions precons (thanks to Luigi Piccinni)
+Added new expansion The Unaligned
+Added cards from storyline The Return
+Added fan set expansion Champions of Cagn
+
+1.2.0.4 - 07/DEC/2013
+Corrected some keyboard shortcuts and chat log commands
+Updated HELP file
+
+1.2.0.3
+Added discard X cards from library option
+Added remove from game X cards from ash heap option
+Added a menu option to become Anarch
+Added a menu option to prompt total votes For or Against in Referendum
+Correct contest menu order
+Correct Transfer shortcuts and some python errors related to that
+Correct random discard card name from hand (now show card name on log)
+Correct changelog build numbers
+Added new expansion Danse Macabre
+Corrected some Counters keyboard shortcuts
+Minor Fixes
+
+1.2.0.2
+Maintenance release
+
+1.2.0.1 - 05/AUG/2013
+Added a Hand menu to send cards back to library (useful for effects like Heart of Nizchetus)
+Added a menu for contested cards
+Added functions to transfer counters from pool to cards in play
+Added Combo Card and Conviction \ Power sections to deck editor
+Change shortcut for "No Reactions" from F11 to Shift+F11 (F11 is shortcut to full screen)
+Change Anarch Counter cost (from 2 to 0)
+Corrected Custom counters option
+Corrected Tokens images
+Updated some card images and texts
+
+1.2.0.0 - JUN/2013
+Official release
+Added some new cards scans and features
+Create vtes fan sets branch
+Added fan set expansion Guardians of The Faith
+
+1.1.0.2
+Fixed some typos errors
+Fixed Phase change errors
+Added Card Rulings URL
+Added new vtes font type
+Added new hand icon
+Added new right click options and optimize current ones
+Added some new cards scans
+Added new filters on deck editor to better deck construction
+Rearrange all shortcuts
+Create HELP file and added it for game options
+Added game rules to game options
+
+1.0.0.0 - 15/DEC/2008
+
+Initial release

@@ -1,0 +1,1555 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+	<blocks>
+	<!-- TEXT BLOCKS -->
+		<block type="text" id="title">
+			<location x="11" y="7" />
+			<text color="#FFFFFF" size="18" font="fonts/vtes.ttf" />
+			<border color="#000000" size="1" />
+			<wordwrap height="20" width="320" align="near" shrinktofit="True" />
+		</block>
+		<block type="text" id="data">
+			<location x="70" y="318" />
+			<text color="#000000" size="12"  font="fonts/vtes.ttf"/>
+			<border color="#FFFFFF" size="0" />
+			<wordwrap height="140" width="270" align="center" shrinktofit="True" />
+		</block>
+		<block type="text" id="crypt">
+			<location x="62" y="400" />
+			<text color="#000000" size="12"  font="fonts/vtes.ttf"/>
+			<border color="#FFFFFF" size="0" />
+			<wordwrap height="80" width="276" align="near" shrinktofit="True" />
+		</block>
+		<block type="text" id="capacity">
+			<location x="314" y="452" />
+			<text color="#FFFFFF" size="24"  font="fonts/vtes.ttf"/>
+			<border color="#000000" size="1" />
+			<wordwrap height="30" width="30" align="center" />
+		</block>
+		<block type="text" id="bcost">
+			<location x="16" y="429" />
+			<text color="#FFFFFF" size="20"  font="fonts/vtes.ttf"/>
+			<border color="#000000" size="1" />
+			<wordwrap height="30" width="30" align="center" />
+		</block>
+		<block type="text" id="pcost">
+			<location x="16" y="429" />
+			<text color="#000000" size="20"  font="fonts/vtes.ttf"/>
+			<wordwrap height="30" width="30" align="center" />
+		</block>
+		<block type="text" id="artist">
+			<location x="66" y="480" />
+			<text color="#FFFFFF" size="10" font="fonts/vtes.ttf" />
+			<border color="#000000" size="2" />
+			<wordwrap height="20" width="320" align="near" />
+		</block>
+	<!-- OVERLAY BLOCKS -->
+		<block type="overlay" id="blood" src="proxy/back/blood.png">
+			<location x="15" y="400" />
+		</block>
+		<block type="overlay" id="pool" src="proxy/back/pool.png">
+			<location x="10" y="384" />
+		</block>
+		<block type="overlay" id="convictioncost" src="proxy/back/convictioncost.png">
+			<location x="10" y="384" />
+		</block>		
+		<block type="overlay" id="action" src="proxy/back/action.png">
+			<location x="18" y="64" />
+		</block>
+		<block type="overlay" id="actionmodifier" src="proxy/back/actionmodifier.png">
+			<location x="18" y="64" />
+		</block>
+		<block type="overlay" id="burnoption" src="proxy/back/burnoption.png">
+			<location x="18" y="204" />
+		</block>
+		<block type="overlay" id="politicalaction" src="proxy/back/politicalaction.png">
+			<location x="18" y="64" />
+		</block>
+		<block type="overlay" id="ally" src="proxy/back/ally.png">
+			<location x="18" y="64" />
+		</block>
+		<block type="overlay" id="retainer" src="proxy/back/retainer.png">
+			<location x="18" y="64" />
+		</block>
+		<block type="overlay" id="reaction" src="proxy/back/reaction.png">
+			<location x="18" y="64" />
+		</block>
+		<block type="overlay" id="equip" src="proxy/back/equip.png">
+			<location x="18" y="64" />
+		</block>
+		<block type="overlay" id="combat" src="proxy/back/combat.png">
+			<location x="18" y="64" />
+		</block>
+		<block type="overlay" id="power" src="proxy/back/power.png">
+			<location x="18" y="64" />
+		</block>
+	</blocks>
+	<!-- LIBRARY TEMPLATES -->
+	<!-- MASTER -->
+	<template src="proxy/back/master.jpg"  default="True" >
+		<matches>
+            <match name="Type" value="Master" />
+		</matches>
+		<overlayblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pool" >
+					</link>
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pool" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="blood" >
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="blood" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Text" contains="Burn Option" >
+					<link block="burnoption" >
+					</link>
+				</if>
+			</conditional>
+		</overlayblocks>
+		<textblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pcost" />
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="data">
+				<property name="Text" />
+			</link>
+			<link block="artist">
+				<property name="Artist" />
+			</link>
+		</textblocks>
+	</template>
+	<!-- EVENT -->
+	<template src="proxy/back/event.jpg" >
+		<matches>
+            <match name="Type" value="Event" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="data">
+				<property name="Text" />
+			</link>
+			<link block="artist">
+				<property name="Artist" />
+			</link>
+		</textblocks>
+	</template>
+	<!-- ACTION -->
+	<template src="proxy/back/action.jpg" >
+		<matches>
+            <match name="Type" value="Action" />
+		</matches>
+		<overlayblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pool" >
+					</link>
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pool" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="blood" >
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="blood" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Text" contains="Burn Option" >
+					<link block="burnoption" >
+					</link>
+				</if>
+			</conditional>
+			<link block="action" />
+		</overlayblocks>
+		<textblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pcost" />
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="data">
+				<property name="Text" />
+			</link>
+			<link block="artist">
+				<property name="Artist" />
+			</link>
+		</textblocks>
+	</template>
+	<!-- ACTION MODIFIER -->
+	<template src="proxy/back/actionmodifier.jpg" >
+		<matches>
+            <match name="Type" value="Action Modifier" />
+		</matches>
+		<overlayblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pool" >
+					</link>
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pool" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="blood" >
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="blood" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Text" contains="Burn Option" >
+					<link block="burnoption" >
+					</link>
+				</if>
+			</conditional>
+			<link block="actionmodifier" />
+		</overlayblocks>
+		<textblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pcost" />
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="data">
+				<property name="Text" />
+			</link>
+			<link block="artist">
+				<property name="Artist" />
+			</link>
+		</textblocks>
+	</template>
+	<!-- ALLY -->
+	<template src="proxy/back/ally.jpg" >
+		<matches>
+            <match name="Type" value="Ally" />
+		</matches>
+		<overlayblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pool" >
+					</link>
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pool" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="blood" >
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="blood" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Text" contains="Burn Option" >
+					<link block="burnoption" >
+					</link>
+				</if>
+			</conditional>
+			<link block="ally" />
+		</overlayblocks>
+		<textblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pcost" />
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="data">
+				<property name="Text" />
+			</link>
+			<link block="artist">
+				<property name="Artist" />
+			</link>
+		</textblocks>
+	</template>
+	<!-- RETAINER -->
+	<template src="proxy/back/retainer.jpg" >
+		<matches>
+            <match name="Type" value="Retainer" />
+		</matches>
+		<overlayblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pool" >
+					</link>
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pool" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="blood" >
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="blood" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Text" contains="Burn Option" >
+					<link block="burnoption" >
+					</link>
+				</if>
+			</conditional>
+			<link block="retainer" />
+		</overlayblocks>
+		<textblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pcost" />
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="data">
+				<property name="Text" />
+			</link>
+			<link block="artist">
+				<property name="Artist" />
+			</link>
+		</textblocks>
+	</template>
+	<!-- REACTION -->
+	<template src="proxy/back/reaction.jpg" >
+		<matches>
+            <match name="Type" value="Reaction" />
+		</matches>
+				<overlayblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pool" >
+					</link>
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pool" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="blood" >
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="blood" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Text" contains="Burn Option" >
+					<link block="burnoption" >
+					</link>
+				</if>
+			</conditional>
+			<link block="reaction" />
+		</overlayblocks>
+		<textblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pcost" />
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="data">
+				<property name="Text" />
+			</link>
+			<link block="artist">
+				<property name="Artist" />
+			</link>
+		</textblocks>
+	</template>
+	<!-- EQUIP -->
+	<template src="proxy/back/equipment.jpg" >
+		<matches>
+            <match name="Type" value="Equipment" />
+		</matches>
+		<overlayblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pool" >
+					</link>
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pool" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="blood" >
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="blood" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Text" contains="Burn Option" >
+					<link block="burnoption" >
+					</link>
+				</if>
+			</conditional>
+			<link block="equip" />
+		</overlayblocks>
+		<textblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pcost" />
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="data">
+				<property name="Text" />
+			</link>
+			<link block="artist">
+				<property name="Artist" />
+			</link>
+		</textblocks>
+	</template>
+	<!-- COMBAT -->
+	<template src="proxy/back/combat.jpg" >
+		<matches>
+            <match name="Type" value="Combat" />
+		</matches>
+		<overlayblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pool" >
+					</link>
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pool" >
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pool" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="blood" >
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="blood" >
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="blood" >
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Text" contains="Burn Option" >
+					<link block="burnoption" >
+					</link>
+				</if>
+			</conditional>
+			<link block="combat" />
+		</overlayblocks>
+		<textblocks>
+			<conditional>
+				<if property="Pool Cost" value="0">
+					<link block="pcost" />
+				</if>
+				<elseif property="Pool Cost" value="1">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="2">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="3">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="4">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="5">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="6">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+				<elseif property="Pool Cost" value="X">
+					<link block="pcost" >
+						<property name="Pool Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<conditional>
+				<if property="Blood Cost" value="1">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</if>
+				<elseif property="Blood Cost" value="2">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="3">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="4">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+				<elseif property="Blood Cost" value="X">
+					<link block="bcost" >
+						<property name="Blood Cost" />
+					</link>
+				</elseif>
+			</conditional>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="data">
+				<property name="Text" />
+			</link>
+			<link block="artist">
+				<property name="Artist" />
+			</link>
+		</textblocks>
+	</template>
+	<!-- CONVITION -->
+	<template src="proxy/back/conviction.jpg" >
+		<matches>
+            <match name="Type" value="Conviction" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="data">
+				<property name="Text" />
+			</link>
+			<link block="artist">
+				<property name="Artist" />
+			</link>
+		</textblocks>
+	</template>
+	<!-- CONVITION -->
+	<template src="proxy/back/power.jpg" >
+		<matches>
+            <match name="Type" value="Power" />
+		</matches>
+		<overlayblocks>
+			<link block="power" />
+		</overlayblocks>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="data">
+				<property name="Text" />
+			</link>
+			<link block="artist">
+				<property name="Artist" />
+			</link>
+		</textblocks>
+	</template>
+   <!-- Clan Templates -->
+	<template src="proxy/back/abomination.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Abomination" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/back/ahrimane.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Ahrimane" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/back/akunanse.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Akunanse" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/back/assamite.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Assamite" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/back/baali.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Baali" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/back/bloodbrother.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Blood Brother" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/back/brujahantitribu.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Brujah Antitribu" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/back/brujah.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Brujah" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/back/caitiff.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Caitiff" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/back/daughterofcacophony.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Daughter of Cacophony" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/back/followerofset.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Follower of Set" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/back/gangrelantitribu.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Gangrel Antitribu" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/back/gangrel.jpg" >
+		<matches>
+            <match name="Type" value="Vampire" />
+            <match name="Clan" value="Gangrel" />
+		</matches>
+		<textblocks>
+			<link block="title">
+				<property name="Name" />
+			</link>
+			<link block="crypt">
+				<property name="Text" />
+			</link>
+			<link block="capacity">
+				<property name="Capacity" />
+			</link>
+		</textblocks>
+	</template>
+</templates>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set name="Tokens" id="721b9c37-9577-48fb-bbd5-a8e2f119d7ce" gameId="d8851051-1a96-4511-a6fc-5b4960002b15" gameVersion="1.2.0.0" version="1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CardSet.xsd">
+  <cards>
+    <card id="d1c56368-ace0-4103-a156-039dee0f97e5" name="Anarch Counter" size="Token Back">
+      <property name="Type" value="Token" />
+      <property name="Clan" value="" />
+      <property name="Group" value="" />
+      <property name="Capacity" value="" />
+      <property name="Discipline" value="" />
+      <property name="Cost" value="" />
+      <property name="Requires" value="" />
+      <property name="Text" value="This vampire is considered anarch and Independent. If this vampire changes sects, burn this counter" />
+	  <property name="Flavor" value="" />
+      <property name="Rarity" value="" />
+      <property name="Artist" value="Ken Meyer, Jr." />
+    </card>
+    <card id="1475aa8e-232d-435c-9f8d-6fe843089da3" name="Black Hand Counter" size="Token Back">
+      <property name="Type" value="Token" />
+      <property name="Clan" value="" />
+      <property name="Group" value="" />
+      <property name="Capacity" value="" />
+      <property name="Discipline" value="" />
+      <property name="Cost" value="" />
+      <property name="Requires" value="" />
+	  <property name="Text" value="This vampire is considered Black Hand." />	  
+      <property name="Flavor" value="" />
+      <property name="Rarity" value="" />
+      <property name="Artist" value="David Leri" />
+    </card>	
+    <card id="f1382c3d-5c0f-4282-8024-aee4037c3169" name="Corruption Counter" size="Token Back">
+      <property name="Type" value="Token" />
+      <property name="Clan" value="" />
+      <property name="Group" value="" />
+      <property name="Capacity" value="" />
+      <property name="Discipline" value="" />
+      <property name="Cost" value="" />
+      <property name="Requires" value="" />
+	  <property name="Text" value="All things may corrupt when minds are prone to evil.&#xd;&#xa;Ovid" />	  
+      <property name="Flavor" value="" />
+      <property name="Rarity" value="" />
+      <property name="Artist" value="Ken Meyer, Jr." />
+    </card>
+    <card id="7977ca09-b062-4050-bdc9-2523e560d0d5" name="EDGE" size="Edge Back">
+      <property name="Type" value="Token" />
+      <property name="Clan" value="" />
+      <property name="Group" value="" />
+      <property name="Capacity" value="" />
+      <property name="Discipline" value="" />
+      <property name="Cost" value="" />
+      <property name="Requires" value="" />
+      <property name="Text" value="The EDGE: The Edge is a symbol showing that your minions have temporarily given you an advantage over the other Methuselahs. It is given or passed to a player who successfully bleeds another player, and it imparts certain advantages to the player controlling it." />
+	  <property name="Flavor" value="" />
+      <property name="Rarity" value="" />
+      <property name="Artist" value="Sydnelson" />
+    </card>
+    <card id="04b978d4-5684-4cd1-98c3-ebd17d75338d" name="Liaison" size="Token Back">
+      <property name="Type" value="Token" />
+      <property name="Clan" value="" />
+      <property name="Group" value="" />
+      <property name="Capacity" value="" />
+      <property name="Discipline" value="" />
+      <property name="Cost" value="" />
+      <property name="Requires" value="" />
+	  <property name="Text" value="Title. This vampire is considered Liaison, unique Independent title that worth 4 votes.&#xd;&#xa;If this title would be contested with a younger vampire, the younger vampire immediately yields instead of contesting." />
+      <property name="Flavor" value="" />
+      <property name="Rarity" value="" />
+      <property name="Artist" value="William O&quot;Connor" />
+    </card>
+  </cards>
+</set>

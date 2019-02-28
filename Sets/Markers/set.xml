@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set name="Markers" id="75309ff3-7371-4932-b404-4a4674ed5027" gameId="d8851051-1a96-4511-a6fc-5b4960002b15" gameVersion="1.2.0.0" version="1.0.0" hidden="True" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CardSet.xsd">
+<markers>
+	<marker name="ablative" id="01df4a9b-5226-44c2-9a2b-c6913fbafd0d" />
+	<marker name="allegience" id="02d6a1f3-38e3-4b88-aded-deb2675410c0" />
+	<marker name="anarch" id="03113dc8-c971-4c39-bce3-8b8ce227b9d8" />
+	<marker name="blood" id="044d5fe3-bdb5-4ad2-5fa4-000000000025" />
+	<marker name="clot" id="05a95b48-12eb-447a-ae40-44b5292a22bd" />
+	<marker name="container" id="064f1ea1-bc13-4bb1-9314-c0482d5b1a35" />
+	<marker name="corruption" id="076fe7d4-bfc1-4be2-a206-af10dab037b7" />
+	<marker name="counter" id="0809c9b7-5407-4266-899f-b7cadf417091" />
+	<marker name="currency" id="09769015-ca61-42a2-8755-4c31e1d7417a" />
+	<marker name="debauchery" id="10c85b4a-86c6-4f3a-80e5-48ccf40a3d90" />
+	<marker name="derangement" id="11fab4fc-6d57-4746-92bb-bcfd1b5eba26" />
+	<marker name="disease" id="124848d2-cf36-4cc3-9f48-bb57e457bf10" />
+	<marker name="founder" id="13645989-4fbc-413f-a275-0b4f4a049547" />
+	<marker name="graft" id="1456b90e-7759-439e-b5df-f1820af36004" />
+	<marker name="hostage" id="159148ef-82ad-4b7d-a75a-823203c4b21a" />
+	<marker name="investment" id="16daaf40-4966-477e-879c-7606e9650874" />
+	<marker name="life" id="170ab056-46d4-477c-81d8-66529974aa54" />
+	<marker name="link" id="18daa80e-e161-44bb-a06c-28851fd74b16" />
+	<marker name="nightmare" id="190951d9-50ac-44c5-ac22-f11ebc0c8043" />
+	<marker name="oath" id="2075d3f4-40a1-4519-a488-53352cf67f6f" />
+	<marker name="pact" id="219b814d-ef74-4dd6-a341-9699c257d3f8" />
+	<marker name="phobia" id="22e4ad3f-4db3-4879-a65e-97ce616f0c1b" />
+	<marker name="poison" id="23a9b0c5-157d-4209-ba3c-f8c516f4f1c1" />
+	<marker name="pox" id="243ae1cf-eaf7-4e20-91a4-13f167449652" />
+	<marker name="pzthos" id="25b3af40-d009-41e1-94ae-6c9cf41da14d" />
+	<marker name="research" id="265845c2-b31c-465e-9a7c-2c1077e7b214" />
+	<marker name="riddle" id="278d7ec0-94a2-4637-86e3-a90e8c993bd0" />
+	<marker name="ritual" id="284aa472-39b7-4467-af19-34b58a6abe1f" />
+	<marker name="rush" id="29164809-9da4-482c-8634-b03d02905a23" />
+	<marker name="seduction" id="30e7d167-f1e5-43dc-bb95-abc752ebc457" />
+	<marker name="shatter" id="31b65a4b-aa54-42a2-b4fc-507a57388359" />
+	<marker name="soul" id="32cb5871-19eb-4489-b546-f7fae0fc0da5" />
+	<marker name="status" id="33638739-9fbe-4ef7-89f1-0f372aef0278" />
+	<marker name="surge" id="34ef8dd0-4277-4fa1-acea-341a8be7994e" />
+	<marker name="taint" id="3507531c-f20d-40cb-8211-ab9f747802ba" />
+	<marker name="target" id="36facd7e-2d2e-4218-9318-131eb063ceee" />
+	<marker name="threat" id="37479eb3-bb77-4885-915e-33da4dcdcf58" />
+	<marker name="torture" id="38f0d2b2-180d-48fd-a87e-1c02a5808fd5" />
+	<marker name="training" id="39229f54-b6c5-45a2-9b5d-5d4524395c6e" />
+	<marker name="transfusion" id="40695fd1-16b7-4f23-9efc-9e504bb735f8" />
+	<marker name="trap" id="41817c90-3934-43d4-a1ad-4a840828b3ee" />
+	<marker name="vandal" id="4206a51b-0818-49ad-9644-5c7f9d793d68" />
+</markers> 
+</set>
