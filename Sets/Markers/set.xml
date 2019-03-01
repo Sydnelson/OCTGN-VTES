@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set name="Markers" id="75309ff3-7371-4932-b404-4a4674ed5027" gameId="d8851051-1a96-4511-a6fc-5b4960002b15" gameVersion="1.2.0.0" version="1.0.0" hidden="True" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CardSet.xsd">
+<set name="Markers" id="75309ff3-7371-4932-b404-4a4674ed5027" gameId="d8851051-1a96-4511-a6fc-5b4960002b15" gameVersion="1.2.0.0" version="1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CardSet.xsd">
 <markers>
 	<marker name="ablative" id="01df4a9b-5226-44c2-9a2b-c6913fbafd0d" />
 	<marker name="allegience" id="02d6a1f3-38e3-4b88-aded-deb2675410c0" />

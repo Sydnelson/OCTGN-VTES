@@ -14,7 +14,21 @@
 		<event name="OnTurnPassed" action="autosaveTable"/>
 		<event name="OnPhasePassed" action="changePhase" />
 	</events>
-		<proxygen definitionsrc="proxy/CardGenData.xml">
+  <symbols>
+    <symbol name="Action" id="A" src="symbols/action.gif" />
+    <symbol name="Burn Option" id="B" src="symbols/burnoption.gif" />
+    <symbol name="Directed Action" id="D" src="symbols/directedaction.gif" />		
+    <symbol name="1 Conviction" id="1C" src="symbols/1conviction.gif" />
+    <symbol name="2 Conviction" id="2C" src="symbols/2conviction.gif" />
+    <symbol name="5 Conviction" id="5C" src="symbols/5conviction.gif" />
+    <symbol name="Flight" id="F" src="symbols/flight.gif" />
+    <symbol name="MERGED" id="M" src="symbols/merged.gif" />
+    <symbol name="Action Modifier" id="AM" src="symbols/modifier.gif" />
+    <symbol name="Combat" id="C" src="symbols/combat.gif" />
+    <symbol name="Reflex" id="X" src="symbols/reflex.gif" />
+    <symbol name="Reaction" id="R" src="symbols/reaction.gif" />
+  </symbols>	
+	<proxygen definitionsrc="proxy/CardGenData.xml">
 	</proxygen>
 	<phases>
 		<phase name="Unlock Phase" icon="phases/phase1.jpg" />
@@ -35,11 +49,11 @@
 		<property name="Discipline" type="String" hidden="False" ignoreText="False" />
 		<property name="Cost" type="String" hidden="False" ignoreText="False" />
 		<property name="Requires" type="String" hidden="False" ignoreText="False" />
-		<property name="Text" type="String" hidden="False" ignoreText="False" />
-		<property name="Flavor" type="String" hidden="False" ignoreText="False" />		
+		<property name="Text" type="RichText" hidden="False" ignoreText="False" />
+		<property name="Flavor" type="RichText" hidden="False" ignoreText="False" />		
 		<property name="Rarity" type="String" hidden="False" ignoreText="False" />
 		<property name="Artist" type="String" hidden="False" ignoreText="False" />
-		<property name="Draft" type="String" hidden="False" ignoreText="False" />		
+		<property name="Draft" type="RichText" hidden="False" ignoreText="False" />		
 		<size name="Crypt Back" width="63" height="88" back="groups/backcrypt.jpg" front="groups/front.png" cornerRadius="0"/>
 		<size name="Token Back" width="63" height="88" back="groups/backtoken.jpg" front="groups/front.png" cornerRadius="0"/>		
 		<size name="Edge Back" width="63" height="63" back="groups/edgeback.png" front="groups/edge.png" cornerRadius="0"/>		
