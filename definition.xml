@@ -2,7 +2,7 @@
 <game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	id="d8851051-1a96-4511-a6fc-5b4960002b15" version="1.5.0.0" octgnVersion="3.1.0.32" scriptVersion="3.1.0.2"
 	name="Vampire the Eternal Struggle" tags="vtes" description="VtES game for OCTGN"
-	setsurl="http://http://octgngames.com/vtes/" gameurl="http://www.vekn.net/" authors="Sydnelson"
+	setsurl="http://http://octgngames.com/vtes/" gameurl="http://www.vekn.net/" authors="Sydnelson20"
 	usetwosidedtable="False"
 	markersize="16" iconurl="http://www.lackeyccg.com/vtes/common/trisnake.png" >
 	<scripts>
